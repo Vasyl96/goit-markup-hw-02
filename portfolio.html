@@ -1,44 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porfolio</title>
-    link
+    <link rel="stylesheet" href="./css/styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
-        <nav>
-            <a href="https://vasyl96.github.io/goit-markup-hw-02/"> <span>Web</span>Studio</a>
-            <ul>
-                <li><a href="https://vasyl96.github.io/goit-markup-hw-02/">Студия</a></li>
-                <li><a href="./portfolio.html">Портфолио</a></li>
-                <li><a href="">Контакты</a></li>
+    <!-- Header section -->
+    <header class="header">
+        <nav class="header-nav">
+            <a class="header-logo" href="https://vasyl96.github.io/goit-markup-hw-02/"> <span
+                    class="logo-text">Web</span>Studio</a>
+            <ul class="header-list">
+                <li class="header-item">
+                    <a class="header-link" href="https://vasyl96.github.io/goit-markup-hw-02/">Студия</a>
+                </li>
+                <li class="header-item">
+                    <a class="header-item" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="header-item">
+                    <a class="header-link" href="#">Контакты</a>
+                </li>
             </ul>
         </nav>
-        <ul>
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <ul class="contact-list">
+            <li class="contact-item"><a class="contact-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="contact-item"><a class="contact-phone" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
     </header>
-    <!-- Унікальний контент -->
-    <main>
-        <!-- Портфоліо -->
-        <section>
-            <!-- Кнопки -->
+    <!-- Main section -->
+    <main class="main">
+        <!-- Portfolio -->
+        <section class="portfolio">
+            <!-- Button -->
             <button type="button">Все</button>
             <button tupe="button">Веб-сайты</button>
             <button type="button">Приложения</button>
             <button tupe="button">Дизайн</button>
             <button tupe="button">Маркетинг</button>
             <!-- Види робіт -->
-            <ul>
+            <ul class="portfolio-list">
                 <!-- Технокряк -->
-                <li>
+                <li class="portfolio-item">
                     <img src="./img/технокряк.jpg" alt="Веб-сайт Технокряк" width="370" height="294">
                     <h3>Технокряк</h3>
                     <p>Веб-сайт</p>
@@ -98,14 +109,18 @@
 
         </section>
     </main>
-    <!-- Footer -->
-    <footer>
-        <a href="https://vasyl96.github.io/goit-markup-hw-02/"> <span>Web</span>Studio</a>
-        <address>г. Киев, пр-т Леси Украинки, 26</address>
-        <ul>
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+    <!-- Footer section-->
+    <footer class="footer">
+        <a class="footer-logo" href="https://vasyl96.github.io/goit-markup-hw-02/"> <span
+                class="logo-text">Web</span>Studio</a>
+        <address class="footer-address">
+            <p class="footer-text">г. Киев, пр-т Леси Украинки, 26</p>
+            <ul class="footer-list">
+                <li class="footer-item"><a class="footer-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li class="footer-item"><a class="footer-phone" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
+        </address>
     </footer>
 </body>
 
