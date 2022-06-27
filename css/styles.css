@@ -8,6 +8,7 @@
   --header-background-color: #ececec;
   --header-logo-text-color: #000000;
   --footer-phone-email-text: rgba(255, 255, 255, 0.6);
+  --hero-btn-backgound-color: #188ce8;
 }
 /* невказав у рут два кольори бо вони тільки один раз використовуються */
 body {
@@ -16,6 +17,7 @@ body {
 }
 
 /* Header section */
+
 .header {
   background-color: var(header-background-color, #ececec);
 }
@@ -26,8 +28,8 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--header-logo-text-color, #000000);
   text-decoration: none;
+  color: var(--header-logo-text-color, #000000);
 }
 .logo-text {
   color: var(--logo-btm-hover-focus-color, #2196f3);
@@ -38,8 +40,11 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--body-filter-btn-header-link-text-color, #212121);
   text-decoration: none;
+  color: var(--body-filter-btn-header-link-text-color, #212121);
+}
+.header-list .header-link.current {
+  color: var(--logo-btm-hover-focus-color, #2196f3);
 }
 
 .contact-phone,
@@ -48,8 +53,8 @@ body {
   font-size: 14px;
   line-height: 1.14px;
   letter-spacing: 0.02em;
-  color: var(--preference-header-phone-email-team-portfolio-text-color, #757575);
   text-decoration: none;
+  color: var(--preference-header-phone-email-team-portfolio-text-color, #757575);
 }
 /* Main section */
 /* Hero */
@@ -149,6 +154,11 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--body-filter-btn-header-link-text-color, #212121);
+}
+
+.portfolio-link {
+  text-decoration: none;
 }
 
 /* Footer section */
@@ -161,11 +171,11 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--logo-footer-main-title-btn-team-hover-focus-color, #ffffff);
   text-decoration: none;
+  color: var(--logo-footer-main-title-btn-team-hover-focus-color, #ffffff);
 }
 
-.footer-address {
+address {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -209,8 +219,8 @@ body {
 .hero-btn:hover,
 .hero-btn:focus {
   cursor: pointer;
-  color: var(--logo-btm-hover-focus-color, #2196f3);
-  background-color: var(--logo-footer-main-title-btn-team-hover-focus-color, #ffffff);
+  color: var(--logo-footer-main-title-btn-team-hover-focus-color, #ffffff);
+  background-color: var(--hero-btn-backgound-color, #188ce8);
 }
 
 /* List-style none */
