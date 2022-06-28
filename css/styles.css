@@ -88,7 +88,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--preference-header-phone-email-team-portfolio-text-color #757575);
+  color: var(--preference-header-phone-email-team-portfolio-text-color, #757575);
 }
 .preference-title {
   font-weight: 700;
