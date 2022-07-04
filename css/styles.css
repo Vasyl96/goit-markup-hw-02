@@ -1,38 +1,53 @@
 :root {
-  --logo-btm-hover-focus-color: #2196f3;
-  --logo-footer-main-title-btn-team-hover-focus-color: #ffffff;
-  --preference-header-phone-email-team-portfolio-text-color: #757575;
-  --team-filter-btn-background-color: #f5f4fa;
-  --body-filter-btn-header-link-text-color: #212121;
-  --footer-hero-background-color: #2f303a;
-  --header-background-color: #ececec;
-  --header-logo-text-color: #000000;
-  --footer-phone-email-text: rgba(255, 255, 255, 0.6);
-  --hero-btn-backgound-color: #188ce8;
+  /* Fons */
+  --main-fons: 'Roboto', sans-serif;
+  --secondary-fons: 'Raleway', sans-serif;
+
+  /* Text color */
+  --dark-main-txt-cl: #212121;
+  --silver-txt-cl: rgba(255, 255, 255, 0.6);
+  --gray-txt-cl: #757575;
+  --white-txt-cl: #ffffff;
+  --accent-txt-cl: #2196f3;
+  --white-logo-txt-cl: #ffffff;
+  --dark-logo-txt-cl: #000000;
+  --skyblue-logo-txt-cl: #2196f3;
+
+  /* Background-color */
+  --white-team-bg-cl: #ffffff;
+  --footer-hero-bg-cl: #2f303a;
+  --header-bg-cl: #ececec;
+  --team-bg-cl: #f5f4fa;
+  --filter-btn-bg-cl: #f5f4fa;
+  --hero-btn-bg-cl: #2196f3;
+  --accent-hero-btn-bg-cl: #188ce8;
+  --accent-filter-btn-bg-cl: #2196f3;
+
+  /* others */
 }
-/* невказав у рут два кольори бо вони тільки один раз використовуються */
+
 body {
-  font-family: 'Roboto', sans-serif;
-  color: var(--body-filter-btn-header-link-text-color, #212121);
+  font-family: var(--main-fons);
+  color: var(--dark-main-txt-cl, #212121);
 }
 
 /* Header section */
 
 .header {
-  background-color: var(header-background-color, #ececec);
+  background-color: var(--header-bg-cl, #ececec);
 }
 
 .header-logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--secondary-fons);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: var(--header-logo-text-color, #000000);
+  color: var(--dark-logo-txt-cl, #000000);
 }
 .logo-text {
-  color: var(--logo-btm-hover-focus-color, #2196f3);
+  color: var(--skyblue-logo-txt-cl, #2196f3);
 }
 
 .header-link {
@@ -41,10 +56,10 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--body-filter-btn-header-link-text-color, #212121);
+  color: inherit;
 }
 .header-list .header-link.current {
-  color: var(--logo-btm-hover-focus-color, #2196f3);
+  color: var(--accent-txt-cl, #2196f3);
 }
 
 .contact-phone,
@@ -54,12 +69,12 @@ body {
   line-height: 1.14px;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--preference-header-phone-email-team-portfolio-text-color, #757575);
+  color: var(--gray-txt-cl, #757575);
 }
 /* Main section */
 /* Hero */
 .hero {
-  background-color: var(--footer-hero-background-color, #2f303a);
+  background-color: var(--footer-hero-bg-cl, #2f303a);
 }
 .main-title {
   font-weight: 900;
@@ -68,7 +83,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--logo-footer-main-title-btn-team-hover-focus-color, #ffffff);
+  color: var(--white-txt-cl, #ffffff);
 }
 .hero-btn {
   font-weight: 700;
@@ -78,17 +93,16 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--logo-footer-main-title-btn-team-hover-focus-color, #ffffff);
-  background-color: var(--logo-btm-hover-focus-color, #2196f3);
+  color: var(--white-txt-cl, #ffffff);
+  background-color: var(--hero-btn-bg-cl, #2196f3);
 }
 
 /* Preferences section */
 .preference-text {
-  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--preference-header-phone-email-team-portfolio-text-color, #757575);
+  color: var(--gray-txt-cl, #757575);
 }
 .preference-title {
   font-weight: 700;
@@ -108,19 +122,19 @@ body {
 }
 
 .team-section {
-  background-color: var(--team-filter-btn-color, #f5f4fa);
+  background-color: var(--team-bg-cl, #f5f4fa);
 }
 .team-item {
-  background-color: var(--logo-footer-main-title-btn-team-hover-focus-color, #ffffff);
+  background-color: var(--white-team-bg-cl, #ffffff);
 }
+)
 
 .team-text {
-  font-style: normal;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--preference-header-phone-email-team-portfolio-text-color, #757575);
+  color: var(--gray-txt-cl, #757575);
 }
 .team-subtitle {
   font-weight: 500;
@@ -137,24 +151,23 @@ body {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--body-filter-btn-header-link-text-color, #212121);
-  background-color: var(--team-filter-btn-color, #f5f4fa);
+  color: inherit;
+  background-color: var(--filter-btn-bg-cl, #f5f4fa);
 }
 
 .portfolio-text {
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
-  color: var(--preference-header-phone-email-team-portfolio-text-color, #757575);
+  color: var(--gray-txt-cl, #757575);
 }
 .portfolio-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--body-filter-btn-header-link-text-color, #212121);
+  color: var(--dark-main-txt-cl, #212121);
 }
 
 .portfolio-link {
@@ -163,7 +176,7 @@ body {
 
 /* Footer section */
 .footer {
-  background-color: var(--footer-hero-background-color, #2f303a);
+  background-color: var(--footer-hero-bg-cl, #2f303a);
 }
 .footer-logo {
   font-family: 'Raleway';
@@ -172,7 +185,7 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: var(--logo-footer-main-title-btn-team-hover-focus-color, #ffffff);
+  color: var(--white-logo-txt-cl, #ffffff);
 }
 
 address {
@@ -180,12 +193,12 @@ address {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--logo-footer-main-title-btn-team-hover-focus-color, #ffffff);
+  color: var(--white-txt-cl, #ffffff);
   text-decoration: none;
 }
 .footer-phone,
 .footer-email {
-  color: var(--footer-phone-email-text, rgba(255, 255, 255, 0.6));
+  color: var(--silver-txt-cl, rgba(255, 255, 255, 0.6));
   text-decoration: none;
 }
 
@@ -206,21 +219,21 @@ address {
 .footer-email:focus,
 .footer-text:hover,
 .footer-text:focus {
-  color: var(--logo-btm-hover-focus-color, #2196f3);
+  color: var(--accent-txt-cl, #2196f3);
 }
 
 .filter-btn:hover,
 .filter-btn:focus {
   cursor: pointer;
-  color: var(--logo-footer-main-title-btn-team-hover-focus-color, #ffffff);
-  background-color: var(--logo-btm-hover-focus-color, #2196f3);
+  color: var(--white-txt-cl, #ffffff);
+  background-color: var(--accent-filter-btn-bg-cl, #2196f3);
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
   cursor: pointer;
-  color: var(--logo-footer-main-title-btn-team-hover-focus-color, #ffffff);
-  background-color: var(--hero-btn-backgound-color, #188ce8);
+  color: var(--white-txt-cl, #ffffff);
+  background-color: var(--accent-hero-btn-bg-cl, #188ce8);
 }
 
 /* List-style none */
